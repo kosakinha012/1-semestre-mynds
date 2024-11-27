@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Loja de eBooks</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav>
+            <div class="logo">eBookShop</div>
+            <input type="text" placeholder="Buscar eBooks..."
+                class="search-bar">
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#ebooks">eBooks</a></li>
+                <li><a href="#benefits">Benefícios</a></li>
+                <li><a href="#purchase">Finalizar Compra</a></li>
+            </ul>
+        </nav>
+
+        <!-- Header de Destaque -->
+        <header id="home">
+            <h2>Bem-vindo à Loja de eBooks</h2>
+            <p>Explore nossa coleção exclusiva e impulsione seu aprendizado!</p>
+            <a href="#ebooks" class="cta-button">Ver eBooks</a>
+        </header>
+
+        <!-- Seção de Categorias -->
+        <section class="categories">
+            <h3>Categorias Populares</h3>
+            <div class="category-list">
+                <div class="category">Tecnologia</div>
+                <div class="category">Negócios</div>
+                <div class="category">Desenvolvimento Pessoal</div>
+                <div class="category">Arte e Design</div>
+            </div>
+        </section>
+
+        <!-- Seção de eBooks (Cards) -->
+        <section id="ebooks">
+            <h3>Nossos eBooks em Destaque</h3>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./livro.jpg" alt="eBook HTML">
+                    <h4>eBook de HTML</h4>
+                    <p>Domine a criação de páginas web com HTML.</p>
+                    <span class="price">R$29,90</span>
+                    <button
+                        onclick="comprar('eBook de HTML', 'Domine a criação de páginas web com HTML.', 'R$29,90')">Comprar</button>
+
+                </div>
+                <div class="card">
+                    <img src="./livro.jpg" alt="eBook CSS">
+                    <h4>eBook de CSS</h4>
+                    <p>Aprenda a estilizar suas páginas de forma
+                        profissional.</p>
+                    <span class="price">R$29,90</span>
+                    <button
+                        onclick="comprar('eBook de CSS', 'Aprenda a estilizar suas páginas de forma profissional.', 'R$29,90')">Comprar</button>
+
+                </div>
+                <div class="card">
+                    <img src="./livro.jpg" alt="eBook JavaScript">
+                    <h4>eBook de JavaScript</h4>
+                    <p>Comece a programar interatividade nas suas páginas.</p>
+                    <span class="price">R$29,90</span>
+                    <button
+                        onclick="comprar('eBook de JavaScript', 'Comece a programar interatividade nas suas páginas.', 'R$29,90')">Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Benefícios -->
+        <section id="benefits">
+            <h3>Por que Escolher Nossos eBooks?</h3>
+            <ul>
+                <li>Material atualizado e confiável.</li>
+                <li>Preços acessíveis e conteúdos de alta qualidade.</li>
+                <li>Experiência prática com exemplos e exercícios.</li>
+            </ul>
+        </section>
+
+        <!-- Formulário de Pagamento -->
+        <section id="purchase">
+            <h3>Finalizar Compra</h3>
+            <div>
+                <p><strong>eBook Selecionado:</strong> <span id="ebook-nome">Selecione um eBook</span></p>
+                <p><strong>Descrição:</strong> <span id="ebook-descricao">---</span></p>
+                <p><strong>Preço:</strong> <span id="ebook-preco">---</span></p>
+            </div>
+            <form id="payment-form">
+                <input type="hidden" id="ebook-selecionado"
+                    name="ebook-selecionado" value>
+
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="cartao">Número do Cartão:</label>
+                <input type="text" id="cartao" required>
+
+                <button type="submit">Pagar</button>
+            </form>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+</html>
+
+

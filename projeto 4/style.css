@@ -1,0 +1,39 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    width: 5000px;
+}
+
+#form label, #form input{
+    margin-top: 5px;
+    margin-bottom: 5 px;
+}
+
+#form button{
+    background-color: violet;
+    color: white;
+    height: 30px;
+    border-radius: 4px
+}
+
+table{
+    width: 100%;
+    border: 0;
+    color: white;
+    height: 20px;
+    border-radius: 8px;
+
+}
+
+.delete-btn{
+    background-color: lightcoral;
+    border: 0;
+    color: white;
+    height: 20px;
+    border-radius: 8px;
+}

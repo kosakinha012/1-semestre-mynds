@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Avancado</title>
+    <link rel="stylesheet" href="./dom.css">
+</head>
+
+<body>
+    <div class="divForm">
+        <form id="myForm" onsubmit="ValoresForm(event)">
+
+            <label for="nome" id="nomeLabel">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="episodios" id="episodiosLabel"> Episodios:</label>
+            <input type="number" id="episodios" name="episodios" required>
+
+            <label for="protagonista" id="protagonistaLabel">
+                Protagonista:</label>
+            <input type="text" id="protagonista" name="protagonista" required>
+
+            <label for="estilo" id="estiloLabel">Estilo:</label>
+            <input type="text" id="estilo" name="estilo" required>
+
+            <button type="submit"> Cadastrar Anime </button>
+
+        </form>
+    </div class = "divTable">
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>nome</th>
+                    <th>episodios</th>
+                    <th>protagonista</th>
+                    <th>estilo</th>
+                </tr>
+            </thead>
+
+            <tbody id="animeTableBody"></tbody>
+
+        </table>
+    </div>
+</body>
+<script src="./dom.js"></script>
+
+</html>

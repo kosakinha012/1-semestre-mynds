@@ -1,0 +1,22 @@
+function sendData(){
+    console.log(editMode)
+    if(editMode){
+        const id = document.getElementById("submit").getAttribute("data-id")
+        editMode(id)
+        return
+    }
+    const name  = document.getElementById("nome").value
+    const email = document.getElementById("email").value
+
+    const data = {
+        
+    }
+}
+
+
+function de deleteData(id){
+    fetch(`{$urlDelete}${id}.json` , )
+        method: 'DELETE',
+        Headers:{'Content-Type: 'application/json'}
+}
+
